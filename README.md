@@ -11,6 +11,6 @@
 
 #### Caso de estudio 
 #### Organización Repositorio
-- [Wiki](): Organización del grupo, las actas de reunión y entregables.
-- [Cronograma y organización](): Cada integrante tiene asignadas las tareas junto con los tiempos de la misma. 
+- [Wiki](https://github.com/Uniandes-byte/ProyectoUno/wiki): Organización del grupo, las actas de reunión y entregables.
+- [Cronograma y organización](https://github.com/users/Uniandes-byte/projects/1): Cada integrante tiene asignadas las tareas junto con los tiempos de la misma. 
 #### Organización de las carpetas 
