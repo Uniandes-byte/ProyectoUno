@@ -13,4 +13,9 @@
 #### Organización Repositorio
 - [Wiki](https://github.com/Uniandes-byte/ProyectoUno/wiki): Organización del grupo, las actas de reunión y entregables.
 - [Cronograma y organización](https://github.com/users/Uniandes-byte/projects/1): Cada integrante tiene asignadas las tareas junto con los tiempos de la misma. 
+
 #### Organización de las carpetas 
+1. En la carpeta *Datos* se encuentran los de prueba y los que se utilizaron para el entrenamiento. 
+2. El archivo Proyecto_Parte_1.ipynb es el que contiene el jupyter ejecutado con los datos del proyecto. 
+3. El documento Proyecto_Parte_1.pdf tiene la documentación y el proceso realizado.
+
