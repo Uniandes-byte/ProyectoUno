@@ -1,0 +1,18 @@
+/* static/src/input.css */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.div_images {
+    text-align: center;
+    height: 800px; /* ajustar la altura según sea necesario */
+    display: flex;
+    justify-content: center;
+  }
+
+.text-images {
+    margin-left: 70px;
+    margin-right: 100px;
+  }
