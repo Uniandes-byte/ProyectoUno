@@ -50,5 +50,5 @@ class ReseniaPredict(APIView):
     def post(self, request, uid):
         resenia = get_object(uid)
         data = DataModel(review_es=resenia.contenido)
-        sas = make_predictions(data)
-        return Response(sas, status=status.HTTP_200_OK)
+        response = make_predictions(data, resenia.contenido)
+        return Response(response, status=status.HTTP_200_OK)

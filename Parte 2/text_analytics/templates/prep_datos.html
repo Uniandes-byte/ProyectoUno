@@ -1,0 +1,117 @@
+<!-- templates/index.html -->
+
+{% extends "index.html" %}
+
+{% block content %} 
+<div class=" bg-cyan-600 py-0.5">
+<div class="bg-white">
+  <div class="mt-48 py-10  flex items-center justify-center">
+    <h1 class=" mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-black">Acerca de la <mark class="px-2 text-white bg-blue-600 rounded dark:bg-cyan-600">preparación de los datos</mark> para los modelos</h1>
+  </div>
+<div class=" mb-24 py-4 inset-x-[15%] text-justify container mx-auto mt-4 text-black md:block">
+
+    <p class="first-letter:mb-4 text-xs font-semibold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-2xl dark:text-black">
+      Para el proceso se propusieron dos formas en las que el usuario puede interactuar con la página para obtener el resultado de la reseña 
+      (ver sección 2). El primero es introducir solo una reseña, mientras que el segundo consiste en introducir un csv y retorna otro con la clasificación de cada una. </p>
+
+    <p class="mt-14 first-letter:first-letter:mb-4 text-xs font-bold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-5xl  dark:text-black"> Limpieza y Calidad</p>
+    
+    <p class="mt-7 first-letter:mb-4 text-xs font-semibold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-2xl dark:text-black">
+      Utilizando lo realizado en la primera parte del proyecto y teniendo en cuenta la automatización del proceso se crearon funciones 
+      con cada uno de los pasos de la limpieza y que se asegurara así la calidad de los datos. El siguiente procedimiento describe el caso cuando se 
+      sube un archivo csv </p>
+
+      <div class="flex justify-center div_top mt-6 mb-6">
+        <div class="overflow-x-auto shadow-md sm:rounded-lg">
+          <table class="w-full text-sm text-left text-cyan-600 dark:text-black">
+            <thead class="text-xs text-cyan-600 uppercase bg-gray-50 dark:bg-black dark:text-gray-500">
+              <tr>
+                <th style="text-align: center;" scope="col" class="px-6 py-3">
+                  <p class="mb-4 text-xs font-semibold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-2xl dark:text-white">  Paso </p>
+                </th>
+                <th style="text-align: center;" scope="col" class="px-6 py-3">
+                  <p class="mb-4 text-xs font-semibold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-2xl dark:text-white">  Procedimiento </p>
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="bg-white border-b dark:bg-gray-500 dark:border-gray-700">
+                <th style="text-align: center;" scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                  <p class="text-xs font-semibold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-2xl dark:text-white"> 1. </p>
+                </th>
+                <td class="px-6 py-4">
+                  <p class="text-xs font-semibold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-2xl dark:text-white"> 
+                    Se transforma el archivo a un DataFrame utilizando la librería pandas, este se le pasa luego a una clase que está diseñada para
+                     realizar la limpieza y la transformación de los datos para aplicar los algoritmos. </p>
+              </tr>
+
+              <tr class="bg-white border-b dark:bg-gray-500 dark:border-gray-700">
+                <th style="text-align: center;" scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                  <p class="text-xs font-semibold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-2xl dark:text-white"> 2. </p>
+                </th>
+                <td class="px-6 py-4">
+                  <p class="text-xs font-semibold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-2xl dark:text-white"> 
+                    Se evalúa que no se tengan columnas sin reseñas o con espacios en blanco, si se presenta alguno de estos casos se elimina este valor.
+                    $$\text{Función: delete_null(self, df: pd.DataFrame)} $$</p>
+              </tr>
+
+              <tr class="bg-white border-b dark:bg-gray-500 dark:border-gray-700">
+                <th style="text-align: center;" scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                  <p class="text-xs font-semibold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-2xl dark:text-white"> 3. </p>
+                </th>
+                <td class="px-6 py-4">
+                  <p class="text-xs font-semibold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-2xl dark:text-white"> 
+                    Se comprueba que no se tengan duplicados entre las reseñas, si se presenta más de una ocurrencia se deja solo la primera.  
+                    $$\text{Función: duplicates(self, df: pd.DataFrame)} $$  </p>
+              </tr>
+
+              <tr class="bg-white border-b dark:bg-gray-500 dark:border-gray-700">
+                <th style="text-align: center;" scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                  <p class="text-xs font-semibold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-2xl dark:text-white"> 4. </p>
+                </th>
+                <td class="px-6 py-4">
+                  <p class="text-xs font-semibold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-2xl dark:text-white"> 
+                    Para reconocer el idioma se utiliza la librería langdetect, se utiliza la función detect en cada fila y su resultado se 
+                    adjunta a una nueva columna que guarda los idiomas.   
+                    $$\text{Función: df['Language'] = [detect(x) for x in df['review_es']]} $$ </p>
+              </tr>
+
+              <tr class="bg-white border-b dark:bg-gray-500 dark:border-gray-700">
+                <th style="text-align: center;" scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                  <p class="text-xs font-semibold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-2xl dark:text-white"> 4. </p>
+                </th>
+                <td class="px-6 py-4">
+                  <p class="text-xs font-semibold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-2xl dark:text-white "> 
+                    Con el resultado del literal anterior se eliminan los que no corresponden al idioma español, de forma que se cumpla con 
+                    la restricción del diccionario dada por el negocio.  
+                    $$\text{Función: deleteDiferents(self, df: pd.DataFrame) } $$ </p>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+    <p class="mb-4 text-xs font-semibold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-2xl dark:text-black">
+      Para el caso en que el usuario introduce una reseña el paso e cambia ya que en la limpieza se identifica el idioma de la review y lo 
+      traduce a español apenas se introduce el texto. Además, un error que se presentaba al intentar realizar la predicción es cuando se tienen 
+      las comillas, por lo cual la siguiente función las elimina: clean_quotes()  </p>
+    
+    <p class="mt-14 first-letter:first-letter:mb-4 text-xs font-bold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-5xl  dark:text-black"> Preparación Antes del Algoritmo y Transformación </p>
+
+
+    <p class="mt-7 text-xs font-semibold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-2xl dark:text-black"> 
+      Con la limpieza realizada se debe realizar la transformación de los datos para que los algoritmos funcionen correctamente, en las 
+      siguientes líneas de código se evidencia el llamado de las funciones de tokenización, el preprocesamiento que consiste en remover los 
+      caracteres que no son ASCII, pasar todo a minúsculas, quitar la puntuación, reemplazar los números por su equivalente textual, se remueven 
+      las stop words y finalmente si hay espacios en blanco se quitan de forma que no se afecte cuando se realice la lematización ya que este es 
+      el siguiente paso, se vuelven a unir las palabras y y debido a que en este proceso puede aparecer nuevamente algunas stop words, se vuelve a 
+      llamar a la función. Finalmente, de este se vuelven a unir las palabras con un .join() y se retorna el nuevo DataFrame. En la figura 2 se 
+      muestra el orden de estos pasos</p>
+
+      <p class="mt-7 mb-5 py-5  text-xs font-semibold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-2xl dark:text-black">   
+        El procedimiento anterior se guarda en un log de forma que si ocurre algún error se pueda identificar la parte específica 
+        en la que aparece para tener una corrección más rápida</p>
+  </div>
+</div>
+</div>
+{% endblock content %}

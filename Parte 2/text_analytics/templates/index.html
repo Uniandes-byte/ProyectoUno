@@ -7,15 +7,15 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Flowbite Navbar</title>
-  <!-- Tailwind CSS CDN -->
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
   {% compress css %}
   <link rel="stylesheet" href="{% static 'css/output.css' %}">
   {% endcompress %}
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Flowbite Navbar</title>
+  <!-- Tailwind CSS CDN --> 
 </head>
 
 <body style="background-color: #ffffff;">
@@ -23,23 +23,24 @@
   <!-- Add this -->
 
 
-  <nav class="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600">
-    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-      <img src="https://media.discordapp.net/attachments/710351727987130399/1099768717858050210/logo.png  "
-        class="h-10 mr-3" alt="FastReview Logo">
-      <div class="flex md:order-2">
+  <nav class="bg-white dark:bg-black fixed w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-x-pink-300">
+    <div class="max-w-screen-2xl flex flex-wrap items-center justify-between mx-auto p-4">
+      <div  class="flex md:order-first">
+        <img src="https://media.discordapp.net/attachments/710351727987130399/1102149355701547048/logo.png  "
+          class="h-16" alt="FastReview Logo">
+        </div>
+      <div class="flex md:order-last">
         <button type="button" data-modal-target="authentication-modal" data-modal-toggle="authentication-modal"
-          class="text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700">Log
+          class="text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-xl px-5 py-2.5  mb-2 dark:bg-cyan-600 dark:hover:bg-cyan-500 dark:focus:ring-gray-700 dark:border-gray-700">Log
           in</button>
-      </div>
-      <div class="flex md:order-2">
-        <button type="button"
-          class="text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700">Sign
+          <button type="button"
+          class="ml-5 text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-xl px-5 py-2.5  mb-2 dark:bg-cyan-600 dark:hover:bg-cyan-500 dark:focus:ring-gray-700 dark:border-gray-700">Sign
           up</button>
       </div>
+      
       <div class="flex md:order-2">
-        <button type="button" aria-expanded="false"
-          class="md:hidden text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 mr-1">
+        <button type="button" aria-expanded="false  "
+          class="md:hidden text-cyan-500 dark:text-cyan-600 hover:bg-gray-100 dark:hover:bg-cyan-600 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-cyan-600 rounded-lg text-sm p-2.5 mr-1">
           <svg class="w-5 h-5" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
             xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd"
@@ -48,20 +49,7 @@
           </svg>
           <span class="sr-only">Search</span>
         </button>
-        <div class="relative hidden md:block">
-          <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
-            <svg class="w-5 h-5 text-gray-500" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd"
-                d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
-                clip-rule="evenodd"></path>
-            </svg>
-            <span class="sr-only">Search icon</span>
-          </div>
-          <input type="text" id="search-navbar"
-            class="block w-full p-2 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-            placeholder="Search...">
-        </div>
+
         <button type="button"
           class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
           aria-expanded="false">
@@ -74,30 +62,26 @@
           </svg>
         </button>
       </div>
-      <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+      <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-2 mr-auto ml-auto" id="navbar-sticky">
         <ul
-          class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+          class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-black md:dark:bg-black dark:border-gray-700">
           <li>
             <a href="{% url 'inicio' %}"
-              class="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500"
+              class="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent text-2xl md:text-cyan-700 md:p-0 md:dark:text-cyan-600"
               aria-current="page">Inicio</a>
           </li>
           <li>
-            <a href="#"
-              class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Preparación
+            <a href="{% url 'prep_datos' %}"
+              class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent text-2xl md:hover:text-cyan-700 md:p-0 md:dark:hover:text-cyan-600 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Preparación
               de datos</a>
           </li>
           <li>
-            <a href="#"
-              class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Algoritmos</a>
-          </li>
-          <li>
             <a href="{% url 'resenia' %}"
-              class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Reseña</a>
+              class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent text-2xl md:hover:text-cyan-700 md:p-0 md:dark:hover:text-cyan-600 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Reseña</a>
           </li>
           <li>
-            <a href="#"
-              class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Contacto</a>
+            <a href="{% url 'reporte' %}"
+              class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent text-2xl md:hover:text-cyan-700 md:p-0 md:dark:hover:text-cyan-600 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Reporte de Reseñas</a>
           </li>
         </ul>
       </div>
@@ -161,7 +145,7 @@
   </div>
   <!-- End of new HTML -->
 
-  <div class="container mx-auto mt-4">
+  <div>
     {% block content %}
     {% endblock content %}
   </div>
@@ -178,6 +162,18 @@
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
 </body>
+
+<footer
+  class="bg-neutral-200 text-center dark:bg-black lg:text-left">
+  <div class="p-4 text-center text-neutral-700 dark:text-neutral-200">
+    © 2023 Copyright:
+    <a
+      class="text-neutral-800 dark:text-neutral-400"
+      href="https://tailwind-elements.com/"
+      >FastReview</a
+    >
+  </div>
+</footer>
 
 
 <!-- <footer class="bg-white rounded-lg shadow dark:bg-gray-900 m-4">

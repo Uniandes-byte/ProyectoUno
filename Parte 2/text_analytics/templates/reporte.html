@@ -1,0 +1,239 @@
+<!-- templates/index.html -->
+
+{% extends "index.html" %}
+
+{% block content %}
+
+<div class=" py-8  max-w-full  gap-8 lg:gap-16 bg-cyan-600">
+    <div class="container max-w-full mt-28">
+        <div class="flex text-center justify-center">
+            <h1 class="mb-14 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white"> Predice tu <span class="underline underline-offset-3 decoration-8 decoration-blue-400 dark:decoration-cyan-600"> CONJUNTO DE RESEÑAS</span></h1>
+        </div>
+<ol class=" flex items-center justify-center">
+    <li class="relative mb-6 sm:mb-0">
+        <div class="flex items-center">
+            <div class="z-10 flex items-center justify-center w-20 h-20 bg-blue-100 rounded-full ring-0 ring-white dark:bg-blue-900 sm:ring-8 dark:ring-gray-900 shrink-0">
+                <svg aria-hidden="true" class="w-12 h-12 text-blue-800 dark:text-blue-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"></path></svg>
+            </div>
+            <div class="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700"></div>
+        </div>
+        <div class="mt-3 sm:pr-8">
+            <h3 class="text-5xl font-bold text-gray-900 dark:text-white">Carga el archivo .csv</h3>
+            <br>
+            <p class="mb-4 text-xs font-semibold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-2xl dark:text-black">El excel debe tener UNICAMENTE una columa llamada <br>  "review_es" en donde las filas son las reseñas a predecir.</p>            
+            <br><br><br><br>
+        </div>
+    </li>
+    <li class="relative mb-10 sm:mb-0">
+        <div class="flex items-center">
+            <div class="z-10 flex items-center justify-center w-20 h-20 bg-blue-100 rounded-full ring-0 ring-white dark:bg-blue-900 sm:ring-8 dark:ring-gray-900 shrink-0">
+                <svg aria-hidden="true" class="w-12 h-12 text-blue-800 dark:text-blue-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"></path></svg>
+            </div>
+            <div class="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700"></div>
+        </div>
+        <div class="mt-1 sm:pr-8">
+            <h3 class="text-5xl font-bold text-gray-900 dark:text-white">Selecciona el algoritmo</h3>
+            <br>
+            <p class="mb-4 text-xs font-semibold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-2xl dark:text-black" style="width: 400px; display: flex; flex-direction: column; justify-content: space-between;">
+                <span>Multinomial NB: 0.8334489937543372</span>
+                <span>R. logística: 0.8487161693268563</span>
+                <span>Red Neuronal: 0.8501040943789036</span>
+              </p>
+            <br><br><br>
+        </div>
+    </li>
+    <li class="relative mb-6 sm:mb-0">
+        <div class="flex items-center">
+            <div class="z-10 flex items-center justify-center w-20 h-20 bg-blue-100 rounded-full ring-0 ring-white dark:bg-blue-900 sm:ring-8 dark:ring-gray-900 shrink-0">
+                <svg aria-hidden="true" class="w-12 h-12 text-blue-800 dark:text-blue-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"></path></svg>
+            </div>
+            <div class="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700"></div>
+        </div>
+        <div class="mt-3 sm:pr-8">
+            <h3 class="text-5xl font-bold text-gray-900 dark:text-white">Selecciona Generar Reporte</h3>
+            <br>
+            <p class="mb-4 text-xs font-semibold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-2xl dark:text-black"> La respuesta será la un reporte en PDF de los datos <br> y un archivo .csv con las predicciones.</p>
+            <br><br><br><br>
+        </div>
+    </li>
+</ol>
+</div>
+</div>
+
+<div class=" py-8 max-w-full max-h-maxlg:py-16  gap-8 lg:gap-16 bg-white w-full">
+    <div class="container mx-auto mb-72">
+    <form id="reporte-form" enctype="multipart/form-data">
+            <div class="py-5 flex items-center justify-center w-full">
+                <label for="dropzone-file"
+                    class="flex flex-col items-center justify-center w-full h-64 border-2 border-gray-300 border-dashed rounded-lg cursor-pointer bg-gray-50 dark:hover:bg-bray-800 dark:bg-gray-700 hover:bg-gray-100 dark:border-gray-600 dark:hover:border-gray-500 dark:hover:bg-gray-600">
+                    <div class="flex flex-col items-center justify-center pt-5 pb-6">
+                        <svg aria-hidden="true" class="w-10 h-10 mb-3 text-gray-400" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12"></path>
+                        </svg>
+                        <p class="mb-2 text-sm text-gray-500 dark:text-gray-400"><span class="font-semibold">Click to upload</span>
+                            or drag and drop</p>
+                        <p class="text-xs text-gray-500 dark:text-gray-400">SVG, PNG, JPG or GIF (MAX. 800x400px)</p>
+                    </div>
+                    <input id="dropzone-file" type="file" name="file" class="hidden" onchange="checkForm()" />
+                </label>
+            </div>
+        
+            <div class="mt-10 flex">
+                <div class="mr-auto">
+                  <label for="large" class="block mb-2 text-base font-medium text-gray-900 dark:text-white"> <p class="text-xs font-semibold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-2xl dark:text-black"> Escoge tu modelo </p></label>
+                  <select id="modelo" class="block w-72 px-4 py-3 text-base text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" onchange="checkForm()">
+                    <option selected></option>
+                    <option value="NB">Multinomial NB</option>
+                    <option value="LR">Regresión Logística</option>
+                    <option value="NN">Red Neuronal</option>
+                  </select>
+                </div>
+                <div class="ml-auto mt-9">
+                  <button id="upload-button" type="submit" class="ml-5 text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-xl px-5 py-2.5  mb-2 dark:bg-gray-700 dark:hover:bg-gray-600 dark:focus:ring-gray-700 dark:border-gray-700" style="display:none">
+                    Generar Reporte
+                  </button>
+                </div>
+            </div>
+    </form>
+</div>
+
+<div id="loader" class="hidden bg-gray-500 bg-opacity-50 fixed w-full h-full top-0 left-0 flex justify-center items-center">
+  <div role="status">
+    <svg aria-hidden="true" class="inline w-10 h-10 mr-2 text-gray-200 animate-spin dark:text-gray-600 fill-blue-600" viewBox="0 0 100 101" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M100 50.5908C100 78.2051 77.6142 100.591 50 100.591C22.3858 100.591 0 78.2051 0 50.5908C0 22.9766 22.3858 0.59082 50 0.59082C77.6142 0.59082 100 22.9766 100 50.5908ZM9.08144 50.5908C9.08144 73.1895 27.4013 91.5094 50 91.5094C72.5987 91.5094 90.9186 73.1895 90.9186 50.5908C90.9186 27.9921 72.5987 9.67226 50 9.67226C27.4013 9.67226 9.08144 27.9921 9.08144 50.5908Z" fill="currentColor"/>
+        <path d="M93.9676 39.0409C96.393 38.4038 97.8624 35.9116 97.0079 33.5539C95.2932 28.8227 92.871 24.3692 89.8167 20.348C85.8452 15.1192 80.8826 10.7238 75.2124 7.41289C69.5422 4.10194 63.2754 1.94025 56.7698 1.05124C51.7666 0.367541 46.6976 0.446843 41.7345 1.27873C39.2613 1.69328 37.813 4.19778 38.4501 6.62326C39.0873 9.04874 41.5694 10.4717 44.0505 10.1071C47.8511 9.54855 51.7191 9.52689 55.5402 10.0491C60.8642 10.7766 65.9928 12.5457 70.6331 15.2552C75.2735 17.9648 79.3347 21.5619 82.5849 25.841C84.9175 28.9121 86.7997 32.2913 88.1811 35.8758C89.083 38.2158 91.5421 39.6781 93.9676 39.0409Z" fill="currentFill"/>
+    </svg>
+    <span class="sr-only">Loading...</span>
+</div>
+</div>
+
+</div>
+
+{% endblock content %}
+
+{% block scripts %}
+<script>
+
+function checkForm() {
+  var fileInput = document.getElementById('dropzone-file');
+  var modelSelect = document.getElementById('modelo');
+  var submitButton = document.getElementById('upload-button');
+
+  if (fileInput.files.length > 0 && modelSelect.selectedIndex > 0) {
+    submitButton.style.display = 'inline-block';
+  } else {
+    submitButton.style.display = 'none';
+  }
+}
+
+    // Obtener el input de tipo file
+const fileInput = document.querySelector('#dropzone-file');
+
+// Obtener el label correspondiente
+const label = document.querySelector('label[for="dropzone-file"]');
+
+// Agregar un evento de cambio al input
+fileInput.addEventListener('change', () => {
+  // Obtener el nombre del archivo seleccionado
+  const fileName = fileInput.files[0].name;
+
+  // Actualizar el texto del label con el nombre del archivo
+  label.querySelector('span').textContent = fileName;
+});
+
+    const reporteForm = document.getElementById("reporte-form");
+    const loader = document.getElementById('loader');
+    reporteForm.addEventListener("submit", event => {
+      loader.classList.remove('hidden');
+      event.preventDefault();
+      const formData = new FormData(reporteForm);
+      const file = document.getElementById("dropzone-file").value;
+      const modelo = document.getElementById("modelo").value;
+      formData.append("file", file);
+      formData.append("modelo", modelo);
+      console.log(file)
+
+      fetch("http://127.0.0.1:8000/api/reportes", {
+        method: "POST",
+        body: formData
+      })
+        .then(response => response.json())
+        .then(data => {
+          console.log(data);
+          const uid = data.uid;
+
+          fetch("http://127.0.0.1:8000/api/reportes-predict/"+uid, {
+            method: "POST",
+        })
+            .then(response => response.json())
+            .then(data => {
+            console.log(data);
+
+                fetch("http://127.0.0.1:8000/api/reportes-results", {
+                method: "POST",
+                })
+                .then(response => {
+                    if (!response.ok) {
+                      throw new Error('Error al descargar el archivo');
+                    }
+                    return response.blob();
+                  })
+                  .then(blob => {
+                  // Crea una URL del blob del PDF para descargarlo
+                  const url = URL.createObjectURL(blob);
+                  
+                  // Crea un enlace para descargar el archivo y haz clic en él para descargar el PDF
+                  const downloadLink = document.createElement('a');
+                  downloadLink.href = url;
+                  downloadLink.download = 'report.pdf';
+                  downloadLink.click();
+
+                  fetch("http://127.0.0.1:8000/api/predicciones-results", {
+                method: "POST",
+                })
+                .then(response => {
+                    if (!response.ok) {
+                      throw new Error('Error al descargar el archivo');
+                    }
+                    return response.blob();
+                  })
+                  .then(blob => {
+                  // Crea una URL del blob del PDF para descargarlo
+                  const url = URL.createObjectURL(blob);
+                  
+                  // Crea un enlace para descargar el archivo y haz clic en él para descargar el PDF
+                  const downloadLink = document.createElement('a');
+                  downloadLink.href = url;
+                  downloadLink.download = 'predictions.csv';
+                  downloadLink.click();
+                  loader.classList.add('hidden');
+                })
+                .catch(error => {
+                console.error("Error fetching data:", error);
+                });
+
+                })
+                .catch(error => {
+                console.error("Error fetching data:", error);
+                });
+
+                
+            
+            // Aquí puedes utilizar los datos recibidos para actualizar la página
+            })
+
+            
+
+            .catch(error => {
+            console.error("Error fetching data:", error);
+            });
+          // Aquí puedes utilizar los datos recibidos para actualizar la página
+        })
+        .catch(error => {
+          console.error("Error fetching data:", error);
+        });
+    });;
+</script>
+{% endblock scripts %}

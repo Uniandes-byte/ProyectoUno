@@ -5,55 +5,55 @@
 {% block content %} 
 
 <div class="mt-24">
-  <!-- section class="dark:bg-gray-900"-->
-  <div class="py-8 max-w-full max-h-maxlg:py-16 grid lg:grid-cols-2 gap-8 lg:gap-16">
-    <div class="flex flex-col justify-center">
-      <h1
-        class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-gray">
-        Conoce a tus espectadores</h1>
-      <p class="mb-8 text-lg font-bold text-gray-500 lg:text-xl dark:text-gray-400"> Nos apoyamos en la rama
-        de procesamiento de lenguaje natural de machine learning para realizar nuestras predicciones</p>
-      <div class="flex flex-col space-y-4 sm:flex-row sm:space-y-0 sm:space-x-4">
-        <a href="#"
-          class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900">
-          Comenzar
-          <svg aria-hidden="true" class="ml-2 -mr-1 w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd"
-              d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-              clip-rule="evenodd"></path>
-          </svg>
-        </a>
-        <a href="#"
-          class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-gray-900 rounded-lg border border-gray-300 hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-gray-900 dark:border-gray-700  dark:focus:ring-gray-800">
-          Aprende más
-        </a>
+  <div class=" py-8 max-w-full max-h-full  gap-8 lg:gap-16 bg-cyan-600 w-full">
+    <div class="container mx-auto mt-4 grid lg:grid-cols-2">
+      <div class="flex flex-col items-end justify-center">
+        <div>
+          <h1
+          class="  mb-14 ml-auto mr-auto  mb-4text-2xl font-extrabold tracking-tight leading-none text-white md:text-9xl lg:text-8xl dark:text-gray">
+          Conoce a tus espectadores</h1>
+        </div>
+        <div>
+          <p class="mb-8 ml- mtext-lg font-bold text-gray-500 lg:text-3xl dark:text-gray-200"> Nos apoyamos en la rama
+            de procesamiento de lenguaje natural de machine learning para realizar nuestras predicciones</p>
+            <div class="flex flex-col justify-center items-center space-y-4 sm:flex-row sm:space-y-0 sm:space-x-4">
+              <a href="{% url 'reporte' %}"
+                class="inline-flex  py-3 px-5 text-base font-medium text-center text-white rounded-lg  dark:bg-cyan-500 dark:hover:bg-cyan-400 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900">
+                Comenzar
+                <svg aria-hidden="true" class="ml-2 -mr-1 w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd"
+                    d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                    clip-rule="evenodd"></path>
+                </svg>
+              </a>
+              <a href="{% url 'prep_datos' %}"
+                class="inline-flex py-3 px-5 text-base font-medium text-center text-white rounded-lg  dark:bg-cyan-500 dark:hover:bg-cyan-400 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900">
+                Aprende más
+              </a>
+            </div>
+        </div>
+        
+      </div>
+      <div class="flex flex-col justify-center items-center">
+        <iframe width="650" height="405" src="https://www.youtube.com/embed/kRTwTrfQGZI" title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
       </div>
     </div>
-    <div>
-      <iframe width="650" height="405" src="https://www.youtube.com/embed/kRTwTrfQGZI" title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowfullscreen></iframe>
     </div>
   </div>
-  <!-- /section -->
-  
 
-  <div class="relative flex py-5 items-center">
-    <div class="flex-grow border-t-4 py-4 border-gray-400"></div>
-    <span class="flex-shrink mx-4 text-gray-400">
-      <p class="mb-8 text-lg font-bold text-gray-500 lg:text-xl dark:text-gray-400">Modelos de procesamiento natural
-        usados
-      </p>
-    </span>
-    <div class="flex-grow border-t-4 border-gray-400"></div>
+
+<div class="bg-white ">
+  <div class="flex items-center justify-center">
+    <h1 class="mt-16 mb-16 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-black">MODELOS DE <span class="text-blue-600 dark:text-cyan-600  ">PROCESAMIENTO DE LENGUAJE NATURAL</span> QUE IMPLEMENTAMOS.</h1>
   </div>
-</div>
-
-<div id="carouselDarkVariant" class="relative div_bottom" data-te-carousel-init data-te-carousel-slide>
+  
+<div id="carouselDarkVariant" class="relative div_bottom w-full container mx-auto mt-4" data-te-carousel-init data-te-carousel-slide>
   <!-- Carousel indicators -->
-  <div class="absolute inset-x-10 top-0 z-[2] mx-[20%] mb-4 flex list-none justify-center p-0"
+  <div class="absolute inset-x-10 -top-10 z-[2] mx-[20%] mb-4 flex list-none justify-center p-0"
     data-te-carousel-indicators>
     <button data-te-target="#carouselDarkVariant" data-te-slide-to="0" data-te-carousel-active
       class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-black bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
@@ -69,17 +69,21 @@
   <!-- Carousel items -->
   <div class="relative w-full overflow-hidden after:clear-both after:block after:content-['']">
     <!-- First item -->
+    
     <div
-      class="relative float-left -mr-[100%] w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+      class="relative float-left -mr-[100%] w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none "
       data-te-carousel-active data-te-carousel-item style="backface-visibility: hidden">
+      <div class="flex items-center justify-center">
+        <h1 class="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-black"> Red neuronal  </h1>
+      </div>
       <div class="div_images">
         <img
-          src="https://media.discordapp.net/attachments/710351727987130399/1099830964005376071/red_neuronal.jpeg?width=1124&height=631"
+          src="https://media.discordapp.net/attachments/710351727987130399/1102185113330122832/red_neuronal_inicio.jpeg"
           class="block w-auto" alt="Motorbike Smoke">
         </img>
       </div>
-      <div class="inset-x-[15%] text-justify text-black md:block">
-        <p class=" mb-10 font-normal text-black-500 lg:text-xl dark:text-black-400 ">
+      <div class="mt-10 mb-40 inset-x-[15%] text-justify text-black md:block">
+        <p class="mb-4 text-xs font-semibold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-2xl dark:text-black">
           Esta se encuentra en el área de aprendizaje profundo de machine learning, utiliza nodos (neuronas) en una
           estructura de capas.
           Dos librerías de Python que permiten implementar este algoritmo son Keras y Tensorflow, con las cuales se
@@ -87,70 +91,70 @@
           del lenguaje natural y a partir de los datos suministrados (texto, o archivos) dar una respuesta al negocio,
           en este caso el análisis de
           sentimientos. A continuación, se da una descripción de la red construida.</p>
-        <div class="flex justify-center">
+        <div class="flex justify-center items-center mt-6 mb-6">
           <div class="overflow-x-auto shadow-md sm:rounded-lg">
-            <table class="w-full text-sm text-left text-gray-500 dark:text-black">
-              <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-slate-200 dark:text-black">
+            <table class="w-full text-sm text-left text-cyan-600 dark:text-black">
+              <thead class="text-xs text-cyan-600 uppercase bg-gray-50 dark:bg-black dark:text-gray-500">
                 <tr>
-                  <th scope="col" class="px-6 py-3">
-                    Capa
+                  <th style="text-align: center;" scope="col" class="px-6 py-3">
+                    <p class="mb-4 text-xs font-semibold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-2xl dark:text-white"> Capa </p>
                   </th>
-                  <th scope="col" class="px-6 py-3">
-                    Descripción
+                  <th style="text-align: center;" scope="col" class="px-6 py-3">
+                    <p class="mb-4 text-xs font-semibold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-2xl dark:text-white"> Descripción </p>
                   </th>
                 </tr>
               </thead>
               <tbody>
-                <tr class="bg-white border-b dark:bg-slate-50 dark:border-gray-700">
-                  <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-black">
-                    1
+                <tr class="bg-white border-b dark:bg-gray-500 dark:border-gray-700">
+                  <th style="text-align: center;" scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                    <p class="text-xs font-semibold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-2xl dark:text-white"> 1</p>
                   </th>
                   <td class="px-6 py-4">
-                    Neuronas: 4 <br>
-                    Función de activación: ReLu
+                    <p class="text-xs font-semibold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-2xl dark:text-white"> Neuronas: 4 </p>
+                    <p class="text-xs font-semibold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-2xl dark:text-white"> Función de activación: ReLu</p>
                   </td>
                 </tr>
-                <tr class="bg-white border-b dark:bg-slate-50 dark:border-gray-700">
-                  <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-black">
-                    2
+                <tr class="bg-white border-b dark:bg-gray-500 dark:border-gray-700">
+                  <th style="text-align: center;" scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                    <p class="mb-4 text-xs font-semibold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-2xl dark:text-white"> 2</p>
                   </th>
                   <td class="px-6 py-4">
-                    Dropout: 0.2 <br>
-                    Utilizada para la regularización
+                    <p class="text-xs font-semibold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-2xl dark:text-white"> Dropout: 0.2 
+                    <p class="text-xs font-semibold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-2xl dark:text-white"> Utilizada para la regularización </p>
                   </td>
                 </tr>
-                <tr class="bg-white border-b dark:bg-slate-50 dark:border-gray-700">
-                  <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-black">
-                    3
+                <tr class="bg-white border-b dark:bg-gray-500 dark:border-gray-700">
+                  <th style="text-align: center;" scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-black">
+                    <p class="text-xs font-semibold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-2xl dark:text-white"> 3</p>
                   </th>
                   <td class="px-6 py-4">
-                    Neuronas: 8 <br>
-                    Función de activación: ReLu
+                    <p class="text-xs font-semibold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-2xl dark:text-white">  Neuronas: 8 </p>
+                    <p class="text-xs font-semibold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-2xl dark:text-white"> Función de activación: ReLu</p>
                   </td>
                 </tr>
-                <tr class="bg-white border-b dark:bg-slate-50 dark:border-gray-700">
-                  <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-black">
-                    4
+                <tr class="bg-white border-b dark:bg-gray-500 dark:border-gray-700">
+                  <th style="text-align: center;" scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-black">
+                    <p class="text-xs font-semibold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-2xl dark:text-white"> 4</p>
                   </th>
                   <td class="px-6 py-4">
-                    Dropout: 0.2 <br>
-                    Utilizada para la regularización
+                    <p class="text-xs font-semibold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-2xl dark:text-white">  Dropout: 0.2 </p>
+                    <p class="text-xs font-semibold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-2xl dark:text-white"> Utilizada para la regularización </p>
                   </td>
                 </tr>
-                <tr class="bg-white border-b dark:bg-slate-50 dark:border-gray-700">
-                  <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-black">
-                    5
+                <tr class="bg-white border-b dark:bg-gray-500 dark:border-gray-700">
+                  <th style="text-align: center;" scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-black">
+                    <p class="text-xs font-semibold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-2xl dark:text-black"> 5</p>
                   </th>
                   <td class="px-6 py-4">
-                    Neuronas: 1 <br>
-                    Función de activación: sigmoide
+                    <p class="text-xs font-semibold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-2xl dark:text-white"> Neuronas: 1 </p>
+                    <p class="text-xs font-semibold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-2xl dark:text-white"> Función de activación: sigmoide</p>
                   </td>
                 </tr>
               </tbody>
             </table>
           </div>
         </div>
-        <p class="mt-10 font-normal text-black-500 lg:text-xl dark:text-black-400 div_top">
+        <p class="text-xs font-semibold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-2xl dark:text-black">
           Los resultados dependen del conjunto de datos extraídos de la vectorización de palabras siendo dependiente del
           número de características.
           Del modelo se pudo extraer el número de características positivas y negativas por clase, además que se extrajo
@@ -165,14 +169,17 @@
     <div
       class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
       data-te-carousel-item style="backface-visibility: hidden">
+      <div class="flex items-center justify-center">
+        <h1 class="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-black"> Multinomial NB  </h1>
+      </div>
       <div class="div_images">
         <img
-          src="https://media.discordapp.net/attachments/710351727987130399/1099827211281895564/multinomial.jpeg?width=1120&height=631"
+          src="https://media.discordapp.net/attachments/710351727987130399/1102185271916757052/multinomial_inicio.jpeg"
           class="block w-auto" alt="Motorbike Smoke">
         </img>
       </div>
-      <div class="inset-x-[15%] text-justify text-black md:block">
-        <p class="text-images font-normal text-black-500 lg:text-xl dark:text-black ">
+      <div class="mt-10 mb-40 inset-x-[15%] text-justify text-black md:block">
+        <p class="mb-4 text-xs font-semibold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-2xl dark:text-black">
           El modelo pertenece a los modelos bayesianos, sus predicciones se realizan basadas en las probabilidades. Para
           este se asume una
           distribución multinomial, teniendo que cada uno de sus resultados son independientes y la suma de las
@@ -182,78 +189,72 @@
         <ul
           class=" text-justify text-images font-normal text-black-500 lg:text-xl dark:text-black max-w-full space-y-1  list-disc list-inside">
           <br>
-          <li>
-            Se calcula la probabilidad de cada una de las clases, en este caso si es positiva o negativa la reseña.
-          </li>
-          <li>
-            Se mira la probabilidad de que se de cada palabra dentro de la clase.
-          </li>
-          <li>
-            Para nuevos datos se evalúa si la clase es posible, calculando la probabilidad de que los nuevos datos, las
-            palabras, pertenezcan a la clase.
-          </li>
+            <p class="text-xs font-semibold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-2xl dark:text-black"> ➜ Se calcula la probabilidad de cada una de las clases, en este caso si es positiva o negativa la reseña.</p>
+            <p class="text-xs font-semibold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-2xl dark:text-black"> ➜ Se mira la probabilidad de que se de cada palabra dentro de la clase. </p>
+            <p class="text-xs font-semibold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-2xl dark:text-black"> ➜ Para nuevos datos se evalúa si la clase es posible, calculando su probabilidad y que las
+            palabras pertenezcan a la clase. </p>
           <br>
         </ul>
 
-        <p class="mt-40 font-normal text-black-500 lg:text-xl dark:text-black-400 ">
+        <p class="mb-4 text-xs font-semibold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-2xl dark:text-black">
           En el caso de estudio se realiza una tabla en la que se tienen los atributos que se quieren predecir y en las
           demás columnas son las palabras,
           los valores de cada una es cuántas veces han aparecido para cada una: </p>
-        <div class="flex justify-center div_top">
+        <div class="flex justify-center div_top mt-6 mb-6">
           <div class="overflow-x-auto shadow-md sm:rounded-lg">
-            <table class="w-full text-sm text-left text-gray-500 dark:text-black">
-              <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-slate-200 dark:text-black">
+            <table class="w-full text-sm text-left text-cyan-600 dark:text-black">
+              <thead class="text-xs text-cyan-600 uppercase bg-gray-50 dark:bg-black dark:text-gray-500">
                 <tr>
                   <th scope="col" class="px-6 py-3">
-                    Reseña
+                    <p class="mb-4 text-xs font-semibold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-2xl dark:text-white">  Reseña </p>
                   </th>
                   <th scope="col" class="px-6 py-3">
-                    Palabra 1
+                    <p class="mb-4 text-xs font-semibold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-2xl dark:text-white">  Palabra 1 </p>
                   </th>
                   <th scope="col" class="px-6 py-3">
-                    Palabra 2
+                    <p class="mb-4 text-xs font-semibold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-2xl dark:text-white">  Palabra 2 </p>
                   </th>
                   <th scope="col" class="px-6 py-3">
-                    Palabra ...
+                    <p class="mb-4 text-xs font-semibold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-2xl dark:text-white">  Palabra ... </p>
                   </th>
                   <th scope="col" class="px-6 py-3">
-                    Palabra n
+                    <p class="mb-4 text-xs font-semibold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-2xl dark:text-white">  Palabra n </p>
                   </th>
                 </tr>
               </thead>
               <tbody>
-                <tr class="bg-white border-b dark:bg-slate-50 dark:border-gray-700">
-                  <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-black">
-                    Positiva
+                <tr class="bg-white border-b dark:bg-gray-500 dark:border-gray-700">
+                  <th style="text-align: center;" scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-black">
+                    <p class="text-xs font-semibold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-2xl dark:text-white"> Positiva </p>
                   </th>
                   <td class="px-6 py-4">
-                    #1
+                    <p class="text-xs font-semibold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-2xl dark:text-white"> #1 </p>
                   </td>
                   <td class="px-6 py-4">
-                    #3
+                    <p class="text-xs font-semibold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-2xl dark:text-white"> #3 </p>
                   </td>
                   <td class="px-6 py-4">
-                    ...
+                    <p class="text-xs font-semibold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-2xl dark:text-white"> ... </p>
                   </td>
                   <td class="px-6 py-4">
-                    #n
+                    <p class="text-xs font-semibold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-2xl dark:text-white"> #n </p>
                   </td>
                 </tr>
-                <tr class="bg-white border-b dark:bg-slate-50 dark:border-gray-700">
-                  <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-black">
-                    Negativa
+                <tr class="bg-white border-b dark:bg-gray-500 dark:border-gray-700">
+                  <th style="text-align: center;" scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-black">
+                    <p class="text-xs font-semibold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-2xl dark:text-white"> Negativa </p>
                   </th>
                   <td class="px-6 py-4">
-                    #2
+                    <p class="text-xs font-semibold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-2xl dark:text-white"> #2 </p>
                   </td>
                   <td class="px-6 py-4">
-                    #4
+                    <p class="text-xs font-semibold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-2xl dark:text-white"> #4 </p>
                   </td>
                   <td class="px-6 py-4">
-                    ...
+                    <p class="text-xs font-semibold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-2xl dark:text-white"> ... </p>
                   </td>
                   <td class="px-6 py-4">
-                    #n
+                    <p class="text-xs font-semibold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-2xl dark:text-white"> #n </p>
                   </td>
                 </tr>
               </tbody>
@@ -261,26 +262,26 @@
           </div>
         </div>
 
-        <p class="text-images font-normal text-black-500 lg:text-xl dark:text-black-400 div_top">
+        <p class="text-xs font-semibold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-2xl dark:text-black"> 
           Para el cálculo de probabilidad de cada una de las palabras en cada categoría se utiliza la siguiente
           ecuación: </p>
 
-        <p class="text-images font-normal text-black-500 lg:text-xl dark:text-black-400 div_top">
-          $$ P(Palabra n|categoria) = \dfrac{\#_n}{\#_1 + \#_3 + ... + \#_n | \#_2 + \#_4 + ... + \#_n} $$</p>
+          <p class="text-xs font-semibold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-2xl dark:text-black">   
+            $$ P(Palabra n|categoria) = \dfrac{\#_n}{\#_1 + \#_3 + ... + \#_n | \#_2 + \#_4 + ... + \#_n} $$</p>
 
-        <p class="text-images font-normal text-black-500 lg:text-xl dark:text-black-400 div_top">
-          Otra operación que se realiza es calcular la probabilidad de cada categoría, teniendo así que: </p>
+          <p class="text-xs font-semibold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-2xl dark:text-black">          
+            Otra operación que se realiza es calcular la probabilidad de cada categoría, teniendo así que: </p>
 
-        <p class="text-images font-normal text-black-500 lg:text-xl dark:text-black-400 div_top">
-          $$ P(Categoria) = \dfrac{\sum{\text{Datos de las palabras de la categoria}}}{\sum{\text{Datos de todas las
+          <p class="text-xs font-semibold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-2xl dark:text-black">          
+            $$ P(Categoria) = \dfrac{\sum{\text{Datos de las palabras de la categoria}}}{\sum{\text{Datos de todas las
           palabras}}}= \dfrac{\#_1 + \#_3 + ... + \#_n}{\#_1 + \#_3 + ... + \#_n | \#_2 + \#_4 + ... + \#_n} $$</p>
 
-        <p class="text-images font-normal text-black-500 lg:text-xl dark:text-black-400 div_top">
-          Con las operaciones anteriores se calcula el producto de las probabilidades con el cual se escoge la que sea
+          <p class="text-xs font-semibold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-2xl dark:text-black">          
+            Con las operaciones anteriores se calcula el producto de las probabilidades con el cual se escoge la que sea
           mayor: </p>
 
-        <p class="text-images font-normal text-black-500 lg:text-xl dark:text-black-400 div_top">
-          $$ P(Categoria) \times P(\text{Palabra 1_{cat}}) \times P(\text{Palabra 2_{cat}}) \times ... \times
+          <p class="text-xs font-semibold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-2xl dark:text-black">          
+            $$ P(Categoria) \times P(\text{Palabra 1_{cat}}) \times P(\text{Palabra 2_{cat}}) \times ... \times
           P(\text{Palabra n_{cat}}) $$</p>
 
       </div>
@@ -289,40 +290,36 @@
     <div
       class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
       data-te-carousel-item style="backface-visibility: hidden">
+      <div class="flex items-center justify-center">
+        <h1 class="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-black"> Regresión Logística   </h1>
+      </div>
       <div class="div_images">
         <img
-          src="https://media.discordapp.net/attachments/710351727987130399/1099827211516780616/regresion_logistica.jpeg?width=1120&height=631"
+          src="https://media.discordapp.net/attachments/710351727987130399/1102185381635567746/regresion_logistica_inicio.jpeg"
           class="block w-auto" alt="Motorbike Smoke">
         </img>
       </div>
-      <div class="inset-x-[15%] text-justify text-black md:block">
-        <p class="text-images font-normal text-black-500 lg:text-xl dark:text-black ">
+      <div class="mb-40 inset-x-[15%] text-justify text-black md:block">
+        <p class="mt-10 text-xs font-semibold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-2xl dark:text-black">          
           Modelo de aprendizaje supervisado que se utiliza para la clasificación binaria, es decir, predice si una
           muestra pertenece a una de las dos instancias posibles.
           Esto se realiza mediante la relación entre características, para luego calcular la probabilidad de un
           resultado determinado. Para utilizar este modelo se deben
           realizar algunos supuestos, entre estos están </p>
 
-        <ul
+          <ul
           class=" text-justify text-images font-normal text-black-500 lg:text-xl dark:text-black max-w-full space-y-1  list-disc list-inside">
           <br>
-          <li>
-            Solo se incluyen las variables que sean significativas, en este caso las palabras que ya se encuentran
-            procesadas y tokenizadas.
-          </li>
-          <li>
-            Esta se debe aplicar a tamaños de muestras grandes. .
-          </li>
-          <li>
-            Las variables deben tener muy poca o ninguna multicolinealidad.
-          </li>
-          <li>
-            Se necesita que la variable de respuesta sea binaria.
-          </li>
-          <br>
+            <p class="text-xs font-semibold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-2xl dark:text-black"> ➜ Solo se incluyen las variables que sean significativas, en este caso las palabras que ya se encuentran
+              procesadas y tokenizadas.</p>
+            <p class="text-xs font-semibold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-2xl dark:text-black"> ➜ Esta se debe aplicar a tamaños de muestras grandes. </p>
+            <p class="text-xs font-semibold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-2xl dark:text-black"> ➜ Las variables deben tener muy poca o ninguna multicolinealidad. </p>
+            <p class="text-xs font-semibold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-2xl dark:text-black"> ➜ Se necesita que la variable de respuesta sea binaria. </p>
+
+            <br>
         </ul>
 
-        <p class="text-images font-normal text-black-500 lg:text-xl dark:text-black-400 ">
+        <p class="text-xs font-semibold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-2xl dark:text-black">          
           El algoritmo tiene ventajas en términos de simplicidad, interpretabilidad y capacidad para modelar relaciones
           no lineales y la cantidad de datos. No obstante, puede
           tener problemas cuando se usan palabras en sentido irónico, oximoron, doble sentido o sarcásticas. Por ello
@@ -334,7 +331,7 @@
 
   <!-- Carousel controls - prev item-->
   <button
-    class="absolute top-80 z-[2] mx-[0%] mb-4 flex list-none p-0 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-black hover:no-underline hover:opacity-90 hover:outline-none focus:text-black focus:no-underline focus:opacity-90 focus:outline-none"
+    class="absolute top-96 z-[2] -mx-[8%] mb-4 flex list-none p-0 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-black hover:no-underline hover:opacity-90 hover:outline-none focus:text-black focus:no-underline focus:opacity-90 focus:outline-none"
     type="button" data-te-target="#carouselDarkVariant" data-te-slide="prev">
     <span>
       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
@@ -347,7 +344,7 @@
   </button>
   <!-- Carousel controls - next item-->
   <button
-    class="absolute top-80 z-[2] mx-[97%] mb-4 flex list-none p-0 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-black hover:no-underline hover:opacity-90 hover:outline-none focus:text-black focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
+    class="absolute top-96 z-[2] mx-[105%] mb-4 flex list-none p-0 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-black hover:no-underline hover:opacity-90 hover:outline-none focus:text-black focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
     type="button" data-te-target="#carouselDarkVariant" data-te-slide="next">
     <span class="inline-block h-8 w-8 dark:grayscale">
       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
@@ -359,5 +356,5 @@
       class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]">Next</span>
   </button>
 </div>
-
+</div>
 {% endblock content %}

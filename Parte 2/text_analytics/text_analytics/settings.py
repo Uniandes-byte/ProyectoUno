@@ -33,7 +33,7 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     # Django external apps
-    'django.contrib.admin',
+    #'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
@@ -43,8 +43,9 @@ INSTALLED_APPS = [
     'rest_framework',
     
     # Django custom apps
-    'user.apps.UserConfig',
+    'usuario.apps.UsuarioConfig',
     'resenia.apps.ReseniaConfig',
+    'reporte.apps.ReporteConfig'
 ]
 
 REST_FRAMEWORK = {
@@ -139,7 +140,7 @@ STATIC_URL = '/static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-AUTH_USER_MODEL = "user.User"
+AUTH_USER_MODEL = "usuario.User"
 
 PASSWORD_HASHERS = [
     'django.contrib.auth.hashers.Argon2PasswordHasher',

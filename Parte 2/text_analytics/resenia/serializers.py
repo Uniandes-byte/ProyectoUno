@@ -5,4 +5,5 @@ class ReseniaSerializer(serializers.ModelSerializer):
     class Meta:
         model = Resenia
         fields = ["uid",
-                  "contenido"]  
+                  "contenido",
+                  "modelo"]  

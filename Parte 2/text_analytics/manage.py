@@ -2,7 +2,8 @@
 """Django's command-line utility for administrative tasks."""
 import os
 import sys
-
+from keras.models import Sequential
+from keras.layers import Dense, Dropout
 
 def main():
     """Run administrative tasks."""
@@ -17,6 +18,15 @@ def main():
         ) from exc
     execute_from_command_line(sys.argv)
 
+def keras_model(neurons1=1, neurons2=1, dropout_rate=0.0):
+    model = Sequential()
+    model.add(Dense(neurons1, input_dim=10000, activation='relu'))
+    model.add(Dropout(dropout_rate))
+    model.add(Dense(neurons2, activation='relu'))
+    model.add(Dropout(dropout_rate))
+    model.add(Dense(1, activation='sigmoid'))
+    model.compile(loss='binary_crossentropy', optimizer='adam', metrics=['accuracy'])
+    return model
 
 if __name__ == '__main__':
     main()
