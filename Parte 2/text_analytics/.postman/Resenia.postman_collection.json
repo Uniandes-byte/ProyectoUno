@@ -1,0 +1,138 @@
+{
+	"info": {
+		"_postman_id": "b05ae2df-a91c-45b1-a957-1751a023f71f",
+		"name": "Resenia",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25928986"
+	},
+	"item": [
+		{
+			"name": "Create a Resenia",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"contenido\": \"Al igual que Tarzan, el hombre del APE (1932), solo mÃ¡s. Hay mÃ¡s de todo, mÃ¡s animales, mÃ¡s variadas tribus africanas, y escenas en las que debe ser el pensamiento, si esto fuera bueno con tres o cuatro leones, cuarenta serÃ­a mejor. TarzÃ¡n lucha con cocodrilos: la mÃ¡quina de cocodrilos gira en el agua como un rodillo, alrededor y alrededor, mordazas batiendo. Tarzan puede matarlo con su cuchillo ubicuo si el Sauriano Sauriano se mantuvo quieto. TarzÃ¡n mata a leones y rinocerontes y un nÃºmero cada vez mayor de animales. Sus amigos son chimpancÃ©s reales, personas que llevan disfraces mÃ¡s grandes, y los elefantes. De hecho, usan elefantes indios, mucho mÃ¡s amigables y capacitables que las africanas, con orejas de disfraces unidas a sus cabezas. La historia humana: otro hombre blanco, peor que el resto, se muestra para unirse con Holt para ir tras el marfil del cementerio de elefante. Tarzan no les mostrarÃ¡ el camino, por lo que el malo dispara a un elefante para que puedan seguirlo a su lecho de muerte. Tarzan intercede, y el malo lo dispara, pero, por supuesto, sobrevive y regresa a salvar a Jane. Todos los demÃ¡s muere, Holt y el chico malo y cada uno de sus niÃ±os. Las personas son impendibles, especialmente a los africanos, y no parece haber mucha distinciÃ³n entre los bellanos negros que mueren porque trabajan para los hombres blancos que viajan por el paÃ­s tabÃº y esos compaÃ±eros negros que los matan. Esta debe ser la Ãºltima pelÃ­cula de TarzÃ¡n antes de que el cÃ³digo de Hays hizo que Jane usara mÃ¡s ropa. Hay una serie de escenas submarinas en las que Jane nadan desnuda, y aunque la luz estÃ¡ parpadeando el movimiento y los vislumbres son muy atractivos. Al parecer, uno de los amigos de Weismuller del equipo de nataciÃ³n olÃ­mpico hizo las escenas desnudas, y no de Maureen O'Sullivan. Sin embargo, ella se mueve a travÃ©s de la pelÃ­cula que lleva el mismo tipo de loinche Weismuller Weismuller (mÃ¡s una parte superior de bikini), que muestra un esplÃ©ndido vislumbre del muslo y la cadera. TodavÃ­a no necesitan hablar mucho. Duermen juntos y pasan el rato con animales geniales y mantÃ©ngase alejado de las ciudades. No es de extraÃ±ar que sean felices.\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{localhost}}/resenias",
+					"host": [
+						"{{localhost}}"
+					],
+					"path": [
+						"resenias"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Resenias",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{localhost}}/resenias",
+					"host": [
+						"{{localhost}}"
+					],
+					"path": [
+						"resenias"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get One Resenia",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{localhost}}/resenias/c6154234-a5e2-4da8-bc6d-ef7e46786337",
+					"host": [
+						"{{localhost}}"
+					],
+					"path": [
+						"resenias",
+						"c6154234-a5e2-4da8-bc6d-ef7e46786337"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Resenia",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"contenido\": \"contenido nuevo\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{localhost}}/resenias/c6154234-a5e2-4da8-bc6d-ef7e46786337",
+					"host": [
+						"{{localhost}}"
+					],
+					"path": [
+						"resenias",
+						"c6154234-a5e2-4da8-bc6d-ef7e46786337"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Resenia",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{localhost}}/resenias/29f0a8cc-3a4c-46dc-8cd5-a865fa3ccac5",
+					"host": [
+						"{{localhost}}"
+					],
+					"path": [
+						"resenias",
+						"29f0a8cc-3a4c-46dc-8cd5-a865fa3ccac5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Predict Resenia",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{localhost}}/resenias-predict/aa19215f-e4da-4dbb-9997-166a04d25cc1",
+					"host": [
+						"{{localhost}}"
+					],
+					"path": [
+						"resenias-predict",
+						"aa19215f-e4da-4dbb-9997-166a04d25cc1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

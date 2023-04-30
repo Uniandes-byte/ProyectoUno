@@ -1,0 +1,105 @@
+{
+	"info": {
+		"_postman_id": "1ff9945b-7b72-42fe-90b1-03dfedf8bcef",
+		"name": "Reporte",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25928986"
+	},
+	"item": [
+		{
+			"name": "Create a Reporte",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{localhost}}/reportes",
+					"host": [
+						"{{localhost}}"
+					],
+					"path": [
+						"reportes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Reportes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{localhost}}/reportes",
+					"host": [
+						"{{localhost}}"
+					],
+					"path": [
+						"reportes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Predict Reporte",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{localhost}}/reportes-predict/fe3a1751-0b9a-4986-afb5-2f25313e955a",
+					"host": [
+						"{{localhost}}"
+					],
+					"path": [
+						"reportes-predict",
+						"fe3a1751-0b9a-4986-afb5-2f25313e955a"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Reporte PDF",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{localhost}}/reportes-results",
+					"host": [
+						"{{localhost}}"
+					],
+					"path": [
+						"reportes-results"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Predicciones CSV",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{localhost}}/predicciones-results",
+					"host": [
+						"{{localhost}}"
+					],
+					"path": [
+						"predicciones-results"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
