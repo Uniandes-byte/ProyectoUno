@@ -39,47 +39,63 @@ git clone https://github.com/Uniandes-byte/ProyectoUno.git
 python -m venv venv
 ```
 
-4. Instalar las dependencias del proyecto en el ambiente virtual. Para ello, primero abra visual studio code, ubiquese en la termina cmd y dirigase a la siguiente ruta: 
+4. Situese dentro del ambiente virtual. Para ello, primero abra visual studio code, ubiquese en la terminal cmd  y ejecute el comando:
+
+```
+venv\Scripts\activate.bat
+```
+
+5. Asegurese que se encuentra en (venv)
+
+6. Instalar las dependencias del proyecto en el ambiente virtual. Para ello, primero abra visual studio code, ubiquese en la termina cmd y dirigase a la siguiente ruta: 
 
 ```
 ProyectoUno\Parte 2\text_analytics>
 ```
 
-5. Instale las dependecias del archivo requirements por medio del siguiente comando:
+7. Instale las dependecias del archivo requirements por medio del siguiente comando:
 
 ```
 pip install -r requirements.txt
 ```
 
-6. En este paso ya tendrá configurado el proyecto de django. 
+8. Situese en la ruta `ProyectoUno\Parte 2\text_analytics\resenia\utils.py` y descomente la línea 13, 14 y 15 para que se instalen las dependencias nltk. Note que debe quedar de la siguiente forma.
 
-7. Ahora es necesario crear la base de datos `MySql`. Es importante tener en cuenta que el usuario admin debe llamarse `root` y la contraseña debe ser `admin`. De no ser así, debe entrar en el archivo `text_analytics\settings.py` y cambiar el parámetros `USER` (línea 97) por el nombre de usuario escogido y el parámetros `PASSWORD` (línea 98) por la contraseña escogida. Luego cree una base de datos llamada  `text_analytics`. Todos estos pasos los puede encontrar en el siguiente tutorial: 
+```
+import nltk
+nltk.download('stopwords')
+nltk.download('punkt')
+```
+
+9. En este paso ya tendrá configurado el proyecto de django. 
+
+10. Ahora es necesario crear la base de datos `MySql`. Es importante tener en cuenta que el usuario admin debe llamarse `root` y la contraseña debe ser `admin`. De no ser así, debe entrar en el archivo `text_analytics\settings.py` y cambiar el parámetros `USER` (línea 97) por el nombre de usuario escogido y el parámetros `PASSWORD` (línea 98) por la contraseña escogida. Luego cree una base de datos llamada  `text_analytics`. Todos estos pasos los puede encontrar en el siguiente tutorial: 
 
 https://medium.com/@a01207543/django-conecta-tu-proyecto-con-la-base-de-datos-mysql-2d329c73192a
 
-8. Realiza las migraciones de las aplicaciones de Django con el siguiente comando:
+11. Realiza las migraciones de las aplicaciones de Django con el siguiente comando:
 
 ```
 python manage.py makemigrations
 ```
 
-9. Mandar las migraciones a la base de datos con el siguiente comando:
+12. Mandar las migraciones a la base de datos con el siguiente comando:
 
 ```
 python manage.py migrate
 ```
 
-10. Ejecutar el proyecto
+13. Ejecutar el proyecto
 
 ```
 python manage.py runserver
 ```
 
-11. Automáticamente la aplicación se desplegara en el localhost en la url:
+14. Automáticamente la aplicación se desplegara en el localhost en la url:
 
 http://127.0.0.1:8000/inicio
 
-12. Ahora podra navegar por la aplicación de forma libre por medio de la barra de navegación y, así mismo, podrá probarla. Recuerde que para dejar de desplegar la aplicación deberá oprimir ctrl+c en el terminal donde se encuentra ejecutandola.
+15. Ahora podra navegar por la aplicación de forma libre por medio de la barra de navegación y, así mismo, podrá probarla. Recuerde que para dejar de desplegar la aplicación deberá oprimir ctrl+c en el terminal donde se encuentra ejecutandola.
 
 
 
