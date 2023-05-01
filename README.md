@@ -39,3 +39,30 @@ git clone https://github.com/Uniandes-byte/ProyectoUno.git
 python -m venv venv
 ```
 
+4. Instalar las dependencias del proyecto en el ambiente virtual. Para ello, primero abra visual studio code, ubiquese en la termina cmd y dirigase a la siguiente ruta: 
+
+```
+ProyectoUno\Parte 2\text_analytics>
+```
+
+5. Instale las dependecias del archivo requirements por medio del siguiente comando:
+
+```
+pip install -r requirements.txt
+```
+
+6. En este paso ya tendrá configurado el proyecto de django. 
+
+7. Ahora es necesario crear la base de datos MySql. Es importante tener en cuenta que el usuario admin debe llamarse "root" y la contraseña debe ser "admin". De no ser así, debe entrar en la carpeta 
+
+```
+ProyectoUno\Parte 2\text_analytics
+```
+
+y cambiar el parámetros 'USER' por el nombre de usuario escogido y el parámetros 'PASSWORD' por la contraseña escogida. Luego cree una base de datos llamada  'text_analytics'. Todos estos pasos los puede encontrar en el siguiente tutorial: 
+
+https://medium.com/@a01207543/django-conecta-tu-proyecto-con-la-base-de-datos-mysql-2d329c73192a
+
+
+
+
