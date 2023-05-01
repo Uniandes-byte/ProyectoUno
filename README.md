@@ -45,15 +45,15 @@ python -m venv venv
 venv\Scripts\activate.bat
 ```
 
-5. Asegurese que se encuentra en (venv)
+5. Asegurese que se encuentra en (venv).
 
-6. Instalar las dependencias del proyecto en el ambiente virtual. Para ello, primero abra visual studio code, ubiquese en la termina cmd y dirigase a la siguiente ruta: 
+6. Instalar las dependencias del proyecto en el ambiente virtual. Ubiquese en la termina cmd y dirigase a la siguiente ruta: 
 
 ```
 ProyectoUno\Parte 2\text_analytics>
 ```
 
-7. Instale las dependecias del archivo requirements por medio del siguiente comando:
+7. Instale las dependencias del archivo requirements por medio del siguiente comando:
 
 ```
 pip install -r requirements.txt
