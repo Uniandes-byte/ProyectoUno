@@ -39,7 +39,7 @@ git clone https://github.com/Uniandes-byte/ProyectoUno.git
 python -m venv venv
 ```
 
-4. Situese dentro del ambiente virtual. Para ello, primero abra visual studio code, ubiquese en la terminal cmd  y ejecute el comando:
+4. Situese dentro del ambiente virtual. Para ello, primero abra el proyecto `Business Intelligence` en visual studio code, ubiquese en la terminal cmd  y ejecute el comando:
 
 ```
 venv\Scripts\activate.bat
