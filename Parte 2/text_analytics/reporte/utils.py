@@ -15,7 +15,7 @@ resultado = 'static/results/predicciones.csv'
 
 def PredictReviews(model: str, data_file: str):
     # Paso 1: Carga de los datos
-    data = pd.read_csv(data_file, sep=',')[:10]
+    data = pd.read_csv(data_file, sep=',')
     print(data)
     # Paso 2: Pasar los datos por el procesador de texto
     text_ = TextPreProcessing()
