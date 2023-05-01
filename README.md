@@ -26,7 +26,7 @@
 - [Wiki](https://github.com/Uniandes-byte/ProyectoUno/wiki/Proyecto-1---Parte-2): Organización del grupo, las actas de reunión y entregables para la etapa 1. 
 
 ##### Pasos para ejecutar el proyecto  
-1. Crear una carpeta llamada `Bisness Intelligence`
+1. Crear una carpeta llamada `Business Intelligence`
 2. Clonar el repositorio dentro de la carpeta con el siguiente comando:
 
 ```
