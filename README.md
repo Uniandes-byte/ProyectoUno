@@ -25,7 +25,17 @@
 ##### Repositorio
 - [Wiki](https://github.com/Uniandes-byte/ProyectoUno/wiki/Proyecto-1---Parte-2): Organización del grupo, las actas de reunión y entregables para la etapa 1. 
 
-##### Contenido  
-1. text_analytics contiene el proyecto con el API construido. En el README de esta sección se especifican los pasos para desplegarlo. 
-2. Proyecto_Parte_2. pdf tiene la documentación detallada del proceso de automatización junto con la de cada una de las vistas y de cómo se ayuda al negocio con esta herramienta.
+##### Pasos para ejecutar el proyecto  
+1. Crear carpeta "Bisness Intelligence"
+2. Clonar el repositorio dentro de la carpeta ""
+
+```
+git clone https://github.com/Uniandes-byte/ProyectoUno.git
+```
+
+3. Crear un ambiente virtual al mismo nivel de la carpeta generada cuando se clono el repositorio. Para ello, ejecute el siguiente comando:
+
+```
+python -m venv venv
+```
 
